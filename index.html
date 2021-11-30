@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>
+        The Particle
+    </title>
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scal=1">
+    <!--Bootstrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--Amatic SC, Google fonts link-->
+    <link rel="shortcut icon" type="image/x-icon" href="image_2021_05_13T07_51_12_704Z.png">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <!--Oswald, Google fonts link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar-inverse" style="position:sticky; top:0; z-index:99999;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">The Particle</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourteam.html">Our Team</a></li>
+                <li><a href="ourarchive.html">Editions</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <section id="Particle" class="parallax-container">
+        <div class="parallax-inner">
+
+            <img src="logo.png">
+
+            <h4>The Particle
+            </h4>
+
+            <h2>Because we're all a part of everything.</h2>
+
+        </div>
+    </section>
+    <div id="margin">
+        <section id="Disagreeing">
+
+            <h1>the particle</h1>
+            <h3>and stuff we do</h3>
+            <p>some 400 word thing about the particle goes here-
+
+            </p>
+            <div style="background-color:#b0e0e6;">
+                <img src="quote.png" style="width:5%;">
+                <br>
+                <p style="color:white;"><strong>....so like important stuff from the article comes here-</strong></p2>
+            </div>
+            <br>
+            <p>and then the article continues</p>
+            <a target="_blank" id="anchor-1" href="https://particlepatata.github.io/particle-edition-7">edition 7 </a>
+        </section>
+        <br><br><br><br>
+
+        <section id="breaker">
+            <center>
+                <img src="">
+            </center>
+
+        </section>
+        <button onclick="myFunction()">Change to dark mode</button>
+
+
+
+        <br><br><br><br>
+
+        <script>
+
+            function myFunction() {
+  const latestTheme = localStorage.getItem("theme");
+  if (latestTheme == 'dark') {
+    styleSheet.href = 'style.css';
+    theme = 'light';
+  } else {
+    styleSheet.href = 'dark-theme.css';
+    theme = 'dark';
+  }
+  // Finally, let's save the current preference to localStorage to keep using it
+  localStorage.setItem("theme", theme);
+}
+        </script>
+    </div>
+
+
+</body>
+
+</html>
