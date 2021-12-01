@@ -97,19 +97,8 @@ background-color:white; color:black;}}
         <br><br><br><br>
 
         <script>
-
-            function myFunction() {
-  const latestTheme = localStorage.getItem("theme");
-  if (latestTheme == 'dark') {
-    styleSheet.href = 'style.css';
-    theme = 'light';
-  } else {
-    styleSheet.href = 'dark-theme.css';
-    theme = 'dark';
-  }
-  // Finally, let's save the current preference to localStorage to keep using it
-  localStorage.setItem("theme", theme);
-}
+            const a = window.matchMedia("(prefers-color-scheme: dark)");
+  console.log(a.matches);
         </script>
     </div>
 
